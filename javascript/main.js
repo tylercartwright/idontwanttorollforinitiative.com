@@ -29,7 +29,10 @@ function rerollValues() {
         for (x = 0; x < unitList.length; x++) {
             if (rowNo == unitList[x][3]){
                 randomRoll = (Math.floor(Math.random() * 20) + 1);
-                rows[i].cells[2].innerHTML = Number(unitList[x][3]) + randomRoll;
+                newValue = Number(unitList[x][2]) + randomRoll;
+                console.log(Number(unitList[x][2]), randomRoll, newValue);
+                console.log(unitList[x]);
+                rows[i].cells[2].innerHTML = newValue;
                 if (randomRoll === 20) {
                     rows[i].cells[2].classList.add("crit");
                 }
