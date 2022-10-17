@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll For Initiative!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<div class="main">
+    <div class="background-edge">-</div>
+    <!-- Reroll Button -->
+    <button type="button" id="reroll">Reroll</button>
+
+    <!-- Unit Entry -->
+    <form id="add-unit">
+        <div class="form-label">
+            <label class="name-label">Name</label>
+        </div>
+        
+        <div class="form-label">
+            <label class="init-label">Initiative Bonus</label>
+        </div>
+        <div class="form-label">
+            <label class="atk-label">Attack Bonus</label>
+        </div>
+        <div class="form-gap"></div>
+        <div class="form-field">
+            <input type="text" id="name-entry" name="name-entry">
+        </div>
+        <div class="form-field">
+            <input type="text" id="init-entry" name="init-entry">
+        </div>
+        <div class="form-field">
+            <input type="text" id="atk-entry" name="atk-entry">
+        </div>
+        <div>
+        <input type="submit" name="add_button" value="+"></div>
+    </form>
+    <div class="entry-error"></div>
+    <table id="initiatives"><tr><th>Name</th><th>Initiative</th><th>Attack</th></tr></table>
+    <div class="gap"></div>
+</div>
+    <footer><div class="footer-left">This tool is used for tracking initiative and attack rolls for multiple NPCs in a tabletop RPG.</div>
+    <div class="footer-right">Designed by <a href="https://www.linkedin.com/in/tylercartwright1">Tyler Cartwright</a></div></footer>
+    <script src="javascript/main.js"></script>
+</body>
+</html>
